@@ -31,5 +31,5 @@ jobs:
       - name: Push to Docker Hub
         run: |
           echo ${{ secrets.DOCKER_HUB_PASSWORD }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
-          docker tag myapp ${{ secrets.DOCKER_HUB_USERNAME }}/entity:latest
+          docker tag entity ${{ secrets.DOCKER_HUB_USERNAME }}/entity:latest
           docker push ${{ secrets.DOCKER_HUB_USERNAME }}/entity:latest
