@@ -19,7 +19,7 @@ spring:
       ddl-auto: update
     show-sql: true
   config:
-    import: "configserver:http://localhost:8071/"
+    import: ${CONFIG_SERVER}
 
 management:
   endpoints:

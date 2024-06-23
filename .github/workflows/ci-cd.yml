@@ -20,6 +20,8 @@ jobs:
           distribution: 'temurin'
 
       - name: Build with Maven
+        env:
+          CONFIG_SERVER: ${{ secrets.CONFIG_SERVER }}
         run: mvn clean install
 
       - name: Run tests
