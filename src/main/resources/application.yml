@@ -19,7 +19,7 @@ spring:
       ddl-auto: update
     show-sql: true
   config:
-    import: ${CONFIG_SERVER}
+    import: configserver:${CONFIG_SERVER}
 
 management:
   endpoints:
