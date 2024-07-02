@@ -1,12 +1,12 @@
 package com.voluntarios.entity;
 
-import com.voluntarios.entity.dtos.OrganizationInfoDto;
+import com.voluntarios.entity.dtos.EntityInfoDto;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication
-@EnableConfigurationProperties(value = {OrganizationInfoDto.class})
+@EnableConfigurationProperties(value = {EntityInfoDto.class})
 public class EntityApplication {
 
 	public static void main(String[] args) {

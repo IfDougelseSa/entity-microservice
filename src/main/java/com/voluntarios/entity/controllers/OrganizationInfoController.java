@@ -1,6 +1,6 @@
 package com.voluntarios.entity.controllers;
 
-import com.voluntarios.entity.dtos.OrganizationInfoDto;
+import com.voluntarios.entity.dtos.EntityInfoDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -14,13 +14,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrganizationInfoController {
 
     @Autowired
-    private OrganizationInfoDto organizationInfoDto;
+    private EntityInfoDto entityInfoDto;
 
 
     @GetMapping("/contact-info")
-    public ResponseEntity<OrganizationInfoDto> getContactInfo() {
+    public ResponseEntity<EntityInfoDto> getContactInfo() {
         return ResponseEntity
                 .status(HttpStatus.OK)
-                .body(organizationInfoDto);
+                .body(entityInfoDto);
     }
 }
