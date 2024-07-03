@@ -10,7 +10,7 @@ import java.util.Map;
 @Getter
 @Setter
 @ConfigurationProperties(prefix = "entity")
-public class EntityInfoDto {
+public class EntityInfoDTO {
 
     private String message;
 

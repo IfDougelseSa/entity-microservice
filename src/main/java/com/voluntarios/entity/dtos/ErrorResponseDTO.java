@@ -4,7 +4,7 @@ import org.springframework.http.HttpStatus;
 
 import java.time.LocalDateTime;
 
-public class ErrorResponseDto {
+public class ErrorResponseDTO {
 
     private  String apiPath;
 
