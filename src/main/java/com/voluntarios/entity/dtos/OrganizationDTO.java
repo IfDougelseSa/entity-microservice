@@ -25,10 +25,11 @@ public class OrganizationDTO {
     private Set<DonationItem> acceptedDonationItems;
     private String donationDetails;
 
-    // Nested DTOs for related entities
     @Data
     public static class ContactDTO {
         private Long contactId;
+        private String type;
+        private String prefix;
         private String telephone;
         private String email;
     }

@@ -14,6 +14,8 @@ public class Contact extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long contactId;
+    private String type;
+    private String prefix;
     private String telephone;
     private String email;
 

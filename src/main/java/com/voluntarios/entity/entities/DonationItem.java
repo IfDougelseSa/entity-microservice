@@ -1,5 +1,8 @@
 package com.voluntarios.entity.entities;
 
+import lombok.Getter;
+
+@Getter
 public enum DonationItem {
     ALIMENTOS_NAO_PERECIVEIS("Alimentos não perecíveis"),
     ALIMENTOS_PERECIVEIS("Alimentos perecíveis"),
@@ -28,7 +31,4 @@ public enum DonationItem {
         this.description = description;
     }
 
-    public String getDescription() {
-        return description;
-    }
 }

@@ -16,6 +16,7 @@ public class Responsible extends BaseEntity {
     private Long responsibleId;
     private String firstName;
     private String lastName;
+    private String role;
 
     @OneToOne
     @JoinColumn(name = "organization_id")
